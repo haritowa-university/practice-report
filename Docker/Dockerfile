@@ -1,8 +1,8 @@
 FROM ubuntu
 
 WORKDIR /container
-ADD scalable-cyrfonts.deb /container
-ADD latex-project-builder /container
+ADD scalable-cyrfonts.deb /container/support
+ADD latex-project-builder /container/support
 
 RUN apt-get update -qq -y
 
@@ -13,4 +13,4 @@ RUN rm -rf /tmp/* /var/tmp/*
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN rm -rf /usr/share/doc/
 
-CMD ["dpkg", "scalable-cyrfonts.deb"]
+CMD ["dpkg", "support/scalable-cyrfonts.deb"]
