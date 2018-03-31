@@ -2,6 +2,7 @@ FROM ubuntu
 
 WORKDIR /container
 ADD scalable-cyrfonts.deb /container
+ADD latex-project-builder /container
 
 RUN apt-get update -qq -y
 
