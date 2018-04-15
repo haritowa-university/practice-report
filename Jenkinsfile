@@ -86,7 +86,7 @@ pipeline {
         RESULT_PDF_NAME = 'result.pdf'
 
         // Insert yor config name to enable dropbox upload
-        // DROPBOX_CONFIG_NAME = 'practice'
+        DROPBOX_CONFIG_NAME = 'practice'
         DROPBOX_ROOT_URL = 'https://www.dropbox.com/home/Practice/note'
     }
 }
