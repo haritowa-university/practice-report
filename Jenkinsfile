@@ -26,8 +26,6 @@ pipeline {
             steps {
             	sh 'rm -rf ${HOME}/bsuir-jenkins/build-result'
                 sh 'mkdir -p ${HOME}/bsuir-jenkins/build-result'
-                sh 'mkdir tex/inc/pdf'
-                sh 'cp docs/pdf/* tex/inc/pdf/.'
             }
         }
         stage('Build') {
